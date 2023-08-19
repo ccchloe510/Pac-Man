@@ -1,0 +1,43 @@
+/* styles.css */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    width: 800px;
+    height: 800px;
+    border: 2px solid #000;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr); 
+    grid-template-rows: repeat(24, 1fr); 
+}
+
+.path {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.wall {
+    background-color: black;
+}
+
+.pacman {
+    width: 25px; 
+    height: 25px; 
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+
+
+h1{
+    color:#000;
+    font-size: title;
+    font-weight:bold;
+}
