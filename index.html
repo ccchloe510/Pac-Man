@@ -2,19 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man</title>
     <link rel="stylesheet" href="style.css">
-    <title>Pac-Man Game</title>
 </head>
 <body>
-    <h1><em>Pac-Man Game</em></h1>
-    <div class="center-container">
-        <div class="game-container"></div>
-        <div class="pacman"></div>
+    <div id="game-container">
+        <div id="pac-man"></div>
+        <div class="ghost" id="ghost-1"></div>
+        <div class="ghost" id="ghost-2"></div>
+        <div class="ghost" id="ghost-3"></div> <!-- New ghost -->
+        <div id="score">Score: <span id="score-value">0</span></div> <!-- Score display -->
+        <div class="food" id="food-1"></div> <!-- Food elements -->
+        <div class="food" id="food-2"></div>
+        <!-- Add more food elements as needed -->
     </div>
+
+    <!-- Custom Game Over Modal -->
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Game Over!</p>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button id="restart-button">Restart</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
 
 
 
